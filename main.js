@@ -93,8 +93,8 @@ function getInfection(humanIdx) {
       continue;
     }
 
-    //Pythagorean theorem - distance = abs(sqrt( deltaX^2 + delataY^2 ))
-    distance = Math.abs(Math.sqrt(Math.pow(humans[i].positionX - humans[humanIdx].positionX, 2) +  Math.pow(humans[i].positionY - humans[humanIdx].positionY, 2)))
+    //Pythagorean theorem: distance = sqrt( deltaX^2 + delataY^2 )
+    distance = Math.sqrt(Math.pow(humans[i].positionX - humans[humanIdx].positionX, 2) +  Math.pow(humans[i].positionY - humans[humanIdx].positionY, 2))
 
     //console.log(distance)
 
